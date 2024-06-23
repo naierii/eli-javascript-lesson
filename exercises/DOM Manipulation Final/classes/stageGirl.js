@@ -1,11 +1,25 @@
 class StageGirl {
-  constructor({firstName, lastName, birthday, address, phone, image}) {
+  constructor({
+    firstName,
+    lastName,
+    image, 
+    hp, 
+    attack, 
+    defense, 
+    spAttack, 
+    spDefense, 
+    speed
+  }) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.birthday = birthday;
-    this.address = address;
-    this.phone = phone;
     this.image = image;
+
+    this.hp = hp;
+    this.attack = attack;
+    this.defense = defense;
+    this.spAttack = spAttack;
+    this.spDefense = spDefense;
+    this.speed = speed;
 
     this.cardContainer = document.getElementById('cards-section');
   }
@@ -18,16 +32,24 @@ class StageGirl {
 
   #fillIdCard(domTemplate) {
     const nameElement = domTemplate.querySelector('.card-name');
-    const birthdayElement = domTemplate.querySelector('.card-birthday');
-    const addressElement = domTemplate.querySelector('.card-address');
-    const phoneElement = domTemplate.querySelector('.card-phone');
     const imageElement = domTemplate.querySelector('.card-img-container').querySelector('img');
+    
+    const hpElement = domTemplate.querySelector('.hp');
+    const attackElement = domTemplate.querySelector('.attack');
+    const defenseElement = domTemplate.querySelector('.defense');
+    const spAttackElement = domTemplate.querySelector('.sp-attack');
+    const spDefenseElement = domTemplate.querySelector('.sp-defense');
+    const speedElement = domTemplate.querySelector('.speed');
 
     nameElement.innerHTML = `${this.firstName} ${this.lastName}`;
-    birthdayElement.innerHTML = this.birthday;
-    addressElement.innerHTML = this.address;
-    phoneElement.innerHTML = this.phone;
     imageElement.src = this.image;
+
+    hpElement.innerHTML = this.hp;
+    attackElement.innerHTML = this.attack;
+    defenseElement.innerHTML = this.defense;
+    spAttackElement.innerHTML = this.spAttack;
+    spDefenseElement.innerHTML = this.spDefense;
+    speedElement.innerHTML = this.speed;
   }
 
   renderIdCard() {
