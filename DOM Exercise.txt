@@ -1,0 +1,11 @@
+DOM Exercise
+
+Step 1
+get the DOM Element using the ID
+Console.log()
+
+Step 2
+Add an onclick function for the DOM element
+
+Step 3
+Add a class to a different DOM onclick of the button

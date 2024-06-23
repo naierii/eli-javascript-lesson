@@ -1,0 +1,77 @@
+const stageGirls = [
+  {
+    firstName: 'Karen',
+    lastName: 'Aijo',
+    birthday: 'Oct 1, 2001',
+    address: 'Japan',
+    phone: '333-333-3333',
+    image: './../../resources/images/karen.png',
+  },
+  {
+    firstName: 'Hikari',
+    lastName: 'Kagura',
+    birthday: 'Jan 8, 2002',
+    address: 'America',
+    phone: '444-444-4444',
+    image: './../../resources/images/hikari.png',
+  },
+  {
+    firstName: 'Mahiru',
+    lastName: 'Tsuyuzaki',
+    birthday: 'May 4, 2001',
+    address: 'Japan',
+    phone: '555-555-5555',
+    image: './../../resources/images/mahiru.png',
+  },
+  {
+    firstName: 'Junna',
+    lastName: 'Hoshimi',
+    birthday: 'Oct 1, 2001',
+    address: 'Japan',
+    phone: '111-111-1111',
+    image: './../../resources/images/junna.png',
+  },
+  {
+    firstName: 'Nana',
+    lastName: 'Daiba',
+    birthday: 'Jul 12, 2001',
+    address: 'Japan',
+    phone: '222-222-2222',
+    image: './../../resources/images/nana.png',
+  },
+  {
+    firstName: 'Futaba',
+    lastName: 'Isurugi',
+    birthday: 'Apr 17, 2001',
+    address: 'Japan',
+    phone: '666-666-6666',
+    image: './../../resources/images/futaba.png',
+
+  },
+  {
+    firstName: 'Kaoruko',
+    lastName: 'Hanayagi',
+    birthday: 'Mar 3, 2002',
+    address: 'Japan',
+    phone: '777-777-7777',
+    image: './../../resources/images/kaoruko.png',
+  },
+  {
+    firstName: 'Claudine',
+    lastName: 'Saijo',
+    birthday: 'Aug 1, 2001',
+    address: 'France',
+    phone: '888-888-8888',
+    image: './../../resources/images/claudine.png',
+  },
+  {
+    firstName: 'Maya',
+    lastName: 'Tendo',
+    birthday: 'Jul 24, 2001',
+    address: 'Japan',
+    phone: '999-999-9999',
+    image: './../../resources/images/maya.png',
+  },
+];
+
+console.log('Stage Girls data loaded:', stageGirls);
