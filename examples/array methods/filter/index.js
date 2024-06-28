@@ -1,8 +1,8 @@
-// use .filter method to filter stageGirls array with HP greater 50
+/**
+ * Description: The filter() method creates a new array 
+ * with all elements that pass the test implemented by the provided function.
+ */
 
-// uncomment the code below
-
-// The goal is to check which stageGirls has an HP greater than 50
 const filteredStageGirls = stageGirls.filter(function(oneItem) {
   return oneItem.hp > 50;
 });
