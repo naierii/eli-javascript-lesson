@@ -50,7 +50,7 @@ const candidates = [
 ];
 
 const firstQualifiedCandicate = candidates.find(function(candidate) {
-  const qualification1 = 'Stage girl';
+  const qualification1 = candidate.job === 'Stage girl';
   const qualification2 = candidate.age > 18;
 
   return qualification1 && qualification2;
