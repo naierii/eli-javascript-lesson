@@ -1,0 +1,17 @@
+html, body{
+  min-height: 100vh;
+  padding: 16px;
+}
+
+#cardNumber1{
+  border: 1px solid red;
+}
+
+#cardNumber2{
+  border: 1px solid green;
+}
+
+#cardNumber1, #cardNumber2{
+  padding: 16px;
+  margin: 16px;
+}
