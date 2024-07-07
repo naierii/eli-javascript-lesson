@@ -14,7 +14,6 @@ const foundNumber = arrayOfNumbers.find(function(numberItem) {
 
 console.log('foundNumber', foundNumber); // 4
 
-
 // Example #2
 const candidates = [
   {
