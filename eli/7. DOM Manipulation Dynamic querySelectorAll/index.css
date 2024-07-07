@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: #f0f0f0;
+}
+
+#cards-section{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card{
+  border: 1px solid rgba(0, 0, 0, 0.182);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+img {
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
