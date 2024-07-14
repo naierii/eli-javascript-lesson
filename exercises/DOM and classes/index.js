@@ -6,7 +6,6 @@
 class card{
   constructor(stageGirlData){
     this.stageGirlData = stageGirlData;
-    this.dom = dom;
   }
 
   fillCard(dom) {
