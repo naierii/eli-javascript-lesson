@@ -22,6 +22,7 @@ class Player extends Entity {
 
 class Npc extends Entity{
   constructor(){
+    super();
     this.hp = 100;
     this.attack = 100;
     this.defense = 100;
