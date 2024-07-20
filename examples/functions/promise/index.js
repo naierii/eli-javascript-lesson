@@ -1,30 +1,23 @@
+function checkAnimals(orderList) {
+  const findCat = orderList.find((order) => order === 'Cat');
+
+  return findCat !== undefined;
+}
 
 // Success example
-const fulfilledPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('Success!'); // The promise is fulfilled after 2 seconds
-  }, 2000);
+const orderPromise = new Promise(function(resolve, reject){
+  const orders = [ 'Pizza', 'Burger', 'Pasta', 'Cat' ];
+  if (checkAnimals(orders)){
+    reject('Your order has a live animal');
+  } else {
+    resolve(orders);
+  }
 });
 
-fulfilledPromise
-  .then(value => {
-    console.log(value); // Output: 'Success!'
+orderPromise
+  .then(function(order) {
+    console.log('Orders of Eli:', order);
   })
-  .catch(error => {
-    console.error('Promise rejected:', error); // This won't be called in this case
-  });
-
-// Failure example
-const failedPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject('Something went wrong!'); // The promise is rejected
-  }, 2000);
-});
-
-failedPromise
-  .then(value => {
-    console.log(value); // This won't be called since the promise is rejected
-  })
-  .catch(error => {
-    console.error('Promise rejected:', error); // Output: 'Promise rejected: Something went wrong!'
+  .catch(function(error) {
+    console.error(error)
   });
