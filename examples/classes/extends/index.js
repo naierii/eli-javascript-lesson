@@ -1,5 +1,6 @@
 class Entity {
-  contructor(){
+  constructor(entityType){
+    console.log(`I am a ${entityType}`);
   }
 
   logHp(){
@@ -13,7 +14,7 @@ class Entity {
 
 class Player extends Entity {
   constructor(){
-    super();
+    super('Player');
     this.hp = 100;
     this.attack = 100;
     this.defense = 100;
@@ -22,7 +23,7 @@ class Player extends Entity {
 
 class Npc extends Entity{
   constructor(){
-    super();
+    super('NPC');
     this.hp = 100;
     this.attack = 100;
     this.defense = 100;
@@ -30,4 +31,4 @@ class Npc extends Entity{
 }
 
 const player1 = new Player();
-player1.logHp();
+const npc1 = new Npc();
