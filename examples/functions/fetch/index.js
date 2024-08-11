@@ -1,6 +1,10 @@
 
 // GET
-const todo1 = fetch('https://jsonplaceholder.typicode.com/todos/1');
+const todo1 = fetch('https://e5ff-136-158-27-48.ngrok-free.app/stage-girls', {
+  headers: {
+    'ngrok-skip-browser-warning': true,
+  },
+});
 
 todo1
   .then(function(responseData){
@@ -15,17 +19,14 @@ todo1
 
 
 // POST
-// fetch('https://jsonplaceholder.typicode.com/posts', {
+// const postSampleUrl = 'http://localhost:5000/todo';
+// fetch(postSampleUrl, {
 //   method: 'POST',
 //   body: JSON.stringify({
-//     title: 'foo',
-//     body: 'bar',
-//     userId: 1
+//     title: 'Paliguan si doggo',
+//     description: 'Para mabango na yung doggo',
 //   }),
-//   headers: {
-//     'Content-type': 'application/json; charset=UTF-8'
-//   }
 // })
-//   .then(response => response.json())
-//   .then(data => console.log(data))
-//   .catch(error => console.error('Error:', error));
+  // .then(response => response.json())
+  // .then(data => console.log(data))
+  // .catch(error => console.error('Error:', error));
